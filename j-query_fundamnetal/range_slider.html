@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			var getOutput = $("#state");
+			var getSlider = $("#slider");
+
+			getSlider.slider({
+				range: true,
+				min: 10,
+				max: 100,
+				values: [20, 40],
+				slide: function(event, ui){
+					getOutput.html(ui.values[0] + '-' + ui.values[1] + 'Tk ');
+					$("#minimum").val(ui.values[0] + 'Tk ');
+					$("#maximum").val(ui.values[1] + 'Tk ');
+				}, 
+
+				//when stop event handler works...
+				// stop: function(event, ui){
+				// 	$("#maximum").val(ui.values[1] + 'Tk ');
+				// 	$("#minimum").val(ui.values[0] + 'Tk ');
+				// }
+			});
+			getOutput.html(getSlider.slider('values', 0) + '-' + getSlider.slider('values', 1) + 'Tk ');
+
+		 	$("#minimum").val(getSlider.slider('values', 0) + 'Tk ');
+		 	$("#maximum").val(getSlider.slider('values', 1) + 'Tk ');
+
+
+		 });
+
+	</script>
+</head>
+
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>Javascript Fundamental Practice</h2>
+		</header>
+
+		<section class="maincontent clear">
+			Amount: <span id="state"></span><br><br>
+			<div id="slider"></div><br>
+
+			<table>
+				<tr>
+					<td><label>Minimum Value: </label></td>
+					<td><input type="text" id="minimum"></td>
+				</tr>
+					<tr>
+					<td><label>Maximum Value: </label></td>
+					<td><input type="text" id="maximum"></td>
+				</tr>
+			</table>
+			
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>Javascript Fundamental Practice</h2>
+		</footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<button onclick="func()">Click me</button>
+			<div id="show">My name is Naznin</div>
+		 	<script type="text/javascript">
+		 		//Find a word's index value...
+		 		// function func(){
+		 		// 	var str = "Javascript practice for better knowledge";
+		 		// 	var re = str.search(/Better/i);
+		 		// 	document.getElementById("show").innerHTML = re;
+		 		// }
+
+		 		//Replace a word by another word..
+		 		function func(){
+		 			var str = document.getElementById("show").innerHTML;
+		 			var re = str.replace("Naznin","Tumpa");
+		 			document.getElementById("show").innerHTML = re;
+		 		}
+		 	</script>
+
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</footer>
+	</div>
+</body>
+</html>

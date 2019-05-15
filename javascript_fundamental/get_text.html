@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section class="template clear">
+		<header class="header clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<div id="show">Get text</div>
+			<hr>
+		 	<script type="text/javascript">
+		 		var div1 = document.getElementById("show").innerText;
+		 		var div2 = document.querySelector("div").innerText;
+		 		var div3 = document.querySelectorAll("div")[0].innerText;
+		 		var div4 = document.getElementsByTagName("div")[0].innerText;
+
+		 		document.write(div1+"<br/>"+div2+"<br>"+div3+"<br/>"+div4);
+		 	</script>
+
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</footer>
+	</section>
+</body>
+</html>

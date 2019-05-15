@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$("#javaItem").selectable({
+				stop: function(){
+					var output = "";
+					$(".ui-selected").each(function(){
+						output += $(this).text() +"<br>";
+					});
+
+					$("#state").html(output);
+
+				}
+			});
+
+		});
+	</script>
+</head>
+
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>Javascript Fundamental Practice</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<ul id="javaItem">
+				<li>Servlets</li>
+				<li>JSP</li>
+				<li>JSTL</li>
+				<li>Struts 2.0</li>
+				<li>Jesper Report</li>
+				<li>Spring</li>
+			</ul>
+			<br>
+			You Selected...
+			<div id="state"></div>
+			
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>Javascript Fundamental Practice</h2>
+		</footer>
+	</div>
+</body>
+
+</html>

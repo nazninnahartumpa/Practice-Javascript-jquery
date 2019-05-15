@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+		 	$("#slidedown").click(function(){
+		 		$(".content").slideDown("slow");
+		 	});
+
+		 	$("#slideup").click(function(){
+		 		$(".content").slideUp("slow");
+		 	});
+
+		 	$("#slidetoggle").click(function(){
+		 		$(".content").slideToggle("slow");
+		 	});
+		 });
+
+	</script>
+</head>
+
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>Javascript Fundamental Practice</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<button id="slidedown">Slide Down</button>
+			<button id="slideup">Slide Up</button>
+			<button id="slidetoggle">Slide Toggle</button>
+
+			<div class="content">
+				<h3>This is the heading</h3>
+				<p>The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...</p>
+			</div>
+			
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>Javascript Fundamental Practice</h2>
+		</footer>
+	</div>
+</body>
+
+</html>

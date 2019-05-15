@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</header>
+
+		<section class="maincontent clear">
+			
+
+		 	<script type="text/javascript">
+		 		// manually find a factorial value by conditions...
+		 		// var num = prompt("Please enter a number..");
+		 		// function factorial(n){
+		 		// 	if(n==0){
+		 		// 		return 1;
+		 		// 	}else{
+		 		// 		product = 1;
+		 		// 		for(i=1; i<=n; i++){
+		 		// 			product *= i; 
+		 		// 		}
+		 		// 		return product;
+		 		// 	}
+		 		// }
+		 		// document.write(factorial(num));
+
+		 		// find a factorial value by recursion...
+		 		var num = prompt("Please enter a number...");
+
+		 		function factorial(n){
+		 			if(n==0){
+		 				return 1;
+		 			}else{
+		 				return n*factorial(n-1);//This is called recursive function.The function is called inside this function.
+		 			}
+		 		}
+		 		document.write(factorial(num));
+
+		 		//This is the main thing which is done by the above function.... 
+		 		// 5*factorial(4) = 5*24 = 120
+		 		// 4*factorial(3) = 4*6 = 24
+		 		// 3*factorial(2) = 6
+		 		// 2*factorial(1) = 2
+		 		// 1*factorial(0) = 1
+
+		 	</script>
+
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</footer>
+	</div>
+</body>
+</html>

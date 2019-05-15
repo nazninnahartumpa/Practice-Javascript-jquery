@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</header>
+
+		<section class="maincontent clear">
+		 	<script type="text/javascript">
+		 		function totalNum(a, b){
+		 			this.x = a;
+		 			this.y = b;
+		 			this.sum = function(){
+		 				return this.x + this.y;
+		 			}
+		 			// this.product = function(){
+		 			// 	return 3000;
+		 			// }
+		 		}
+		 		function productNum(a, b){
+		 			this.x = a;
+		 			this.y = b;
+		 			this.product = function(){
+		 				return this.x * this.y;
+		 			}
+		 		}
+		 		totalNum.prototype = new productNum();
+		 		var res = new totalNum(10,5); 
+		 			// res.product = function(){
+		 			// 	return 5000;
+		 			// }
+		 		document.write(res.sum());
+		 	</script>
+
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</footer>
+	</div>
+</body>
+</html>

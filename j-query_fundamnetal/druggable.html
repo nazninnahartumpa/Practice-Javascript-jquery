@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			//$("#draggable").draggable({
+				//axis:'x'
+				//containment:'#outer_box',
+				//cursor:'pointer',
+				//cursor:'move',
+				//opacity:'0.5',
+				//revert: true
+			//});
+
+			// draggable in a box..
+			// $("div").draggable({
+			// 	cancel:"#outer_box",
+			// 	snap:"#outer_box",
+			// 	ssnapTollerance:50
+
+			// });
+
+			// $("div").draggable({
+			// 	stack:'.mydiv'
+			// });
+
+			$(".mydiv").draggable();
+			
+			$(".mydiv").mousedown(function(){
+				var maxZindex = 0;
+				$(this).siblings('.mydiv').each(function(){
+					var currentzindex = Number($(this).css('z-index'));
+					maxZindex = currentzindex > maxZindex ? currentzindex:maxZindex;
+				});
+				$(this).css('z-index', maxZindex + 1);
+
+
+			})
+
+
+			
+
+		 });
+
+	</script>
+</head>
+
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>Javascript Fundamental Practice</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<!-- only draggable... -->
+			<!-- <div class="box_draggable" id="outer_box">
+				<div id="draggable" class="draggablecls">
+					This is draggable.
+				</div>
+			</div> -->
+
+			<div class="mydiv" style="background: green;"></div>
+			<div class="mydiv" style="background: red;"></div>
+			<div class="mydiv" style="background: blue;"></div>
+			<div class="mydiv" style="background: purple;"></div><br><br>
+
+			<!-- <div class="box_draggable" id="outer_box"></div> -->
+
+			
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>Javascript Fundamental Practice</h2>
+		</footer>
+	</div>
+</body>
+
+</html>

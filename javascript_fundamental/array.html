@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</header>
+
+		<section class="maincontent clear">
+		 	<script type="text/javascript">
+		 		var color = ["blue", "green", "purple", "yellow"]
+		 		//color.pop()remove last element
+		 		//colo.push("orange")include a element
+		 		color[color.length] = "orange"+"<br/>"+"<br/>";//include a element
+		 		document.write(color)
+
+		 		//number sorting
+		 		var num = [22, 1030, 55, 10, 7]
+		 		 var len = "Length is :" + num.length + "<br/>";
+		 		document.write(len);
+		 		function sorting(x,y){
+		 			return(x-y);
+		 		}
+		 		num.sort(sorting);
+		 		document.write(num)
+		 	</script>
+
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</footer>
+	</div>
+</body>
+</html>

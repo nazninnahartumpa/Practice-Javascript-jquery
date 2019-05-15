@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<form onsubmit="myfunc()" name="myform">
+				<table class="mytable">
+					<tr>
+						<td>select: </td>
+						<td>
+							<input type="radio" value="Python" name="rdbox">Python<br>
+							<input type="radio" value="Java" name="rdbox">Java<br>
+							<input type="radio" value="PHP" name="rdbox">PHP<br>
+							<input type="radio" value="HTML" name="rdbox">HTML
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="reset" value="Refresh">
+						<input type="submit" value="Submit"></td>
+					</tr>
+				</table>
+			</form>
+			
+			<script type="text/javascript">
+				function myfunc(){
+					document.write("You selected "+func());
+				}
+
+				function func(){
+					for(i=0; i<=3; i++){
+						var getvalue = document.myform.rdbox[i];
+						if(getvalue.checked){
+							return getvalue.value;
+						}
+					}
+					
+				}
+		 	</script>
+
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</footer>
+	</div>
+</body>
+</html>

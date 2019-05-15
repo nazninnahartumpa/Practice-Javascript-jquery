@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+		 	$("#fade_in").click(function(){
+		 		$(".content").fadeIn("slow");
+		 	});
+
+		 	$("#fade_out").click(function(){
+		 		$(".content").fadeOut("slow");
+		 	});
+
+		 	$("#fade_to").click(function(){
+		 		$(".content").fadeTo("1000",0.5);
+		 	});
+
+		 	$("#toggle").click(function(){
+		 		$(".content").fadeToggle(3000);
+		 	});
+		 });
+
+	</script>
+</head>
+
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>Javascript Fundamental Practice</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<button id="fade_in">Fade In</button>
+			<button id="fade_out">Fade Out</button>
+			<button id="fade_to">Fade To</button>
+			<button id="toggle">Toggle</button>
+
+			<div class="content">
+				<h3>This is the heading</h3>
+				<p>The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...The text will be hide...</p>
+			</div>
+			
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>Javascript Fundamental Practice</h2>
+		</footer>
+	</div>
+</body>
+
+</html>

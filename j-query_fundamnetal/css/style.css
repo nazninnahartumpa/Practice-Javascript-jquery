@@ -1,0 +1,235 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	outline: 0px;
+}
+body{
+	font-family: Arial;
+}
+.template{
+	width: 960px;
+	margin: 0 auto;
+	background: #ddd;
+}
+.clear{
+	overflow: hidden;
+}
+.maincontent{
+	background: #fff;
+	min-height: 500px;
+	padding: 10px;
+	margin: 10px;
+}
+.header, .footer{
+	text-align: center;
+    font-size: 22px;
+    padding: 5px;
+    color: #282923;
+}
+#myImage{
+	width: 570px;
+    float: left;
+    margin-top: 34px;
+    margin-left: 165px;
+}
+.btn{
+	padding: 4px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    float: left;
+}
+/*table{
+	width: 300px;
+	margin: 0 auto;
+	border: 2px solid #ddd;
+	padding: 10px;
+}
+input[type="text"]{
+	width: 200px;
+	padding: 5px 15px;
+}
+input[type="button"]{
+	width: 120px;
+	padding: 5px 8px;
+	cursor: pointer;
+}*/
+#submitbtn{
+	width: 70px;
+	padding: 5px 10px;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+/*.mytable{
+	width: 470px;
+	margin: 0 auto;
+	border: 2px solid #ddd;
+	padding: 10px;
+}
+.mytable input[type="text"]{
+	width: 170px;
+	padding: 8px 8px;
+}
+.mytable textarea{
+	height: 100px;
+	width: 190px;
+}
+.mytable input[type="submit"],[type="reset"]{
+	width: 100px;
+	padding: 5px 8px;
+	cursor: pointer;
+	float: left;
+}*/
+#error{
+	color: red;
+}
+.content{
+	
+	background: #DEDDDE;
+	padding: 10px;
+	border: 1px solid #DEDDDE;
+	margin: 10px 10px 10px 0px;
+	width: 700px;
+	position: relative;
+	height: 400px;
+}
+.box{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	padding: 10px;
+	margin: 20px;
+	background: purple;
+	border-radius: 50%;
+
+}
+.draggablecls{
+	height: 200px;
+	width: 200px;
+	background: green;
+	display: table-cell;
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 20px;
+}
+.box_draggable{
+	height: 300px;
+	width: 300px;
+	border: 2px solid #ddd;
+}
+.mydiv{
+	height: 200px;
+	width: 200px;
+	border: 2px solid #ddd;
+	display: table-cell;
+}
+.lang_box{
+	background: #eee;
+	border: 2px solid #666;
+	display: inline-table;
+	font-size: 16px;
+	padding: 25px;
+	width: 225px;
+}
+li{
+	font-size: 18px;
+}
+.widgetClass{
+	background: #666;
+	border: 2px solid #000;
+	color: #fff;
+}
+.resizable_box{
+	font-size: 16px;
+	padding: 25px;
+	width: 100px;
+	color: #fff;
+	text-align: center;
+}
+.ui-resizable-helper{
+	border: 2px dotted #666;
+}
+.outer_div{
+	border: 2px solid #666;
+	height: 300px;
+	width: 400px;
+}
+#tbl tr td{
+	padding: 10px;
+}
+#javaItem li{
+	list-style: none;
+	display: inline-block;
+	padding: 15px;
+	font-size: 14px;
+	border: 1px solid #666;
+	margin-top: 20px;
+	cursor: pointer;
+}
+/*.ui-selected{
+	background: #666;
+	color: #fff;
+}
+.ui-selecting{
+	background: pink;
+	color: #fff;
+}*/
+#phpItem li{
+	border: 1px solid #000;
+	padding: 15px;
+	height: 15px;
+	width: 300px;
+	cursor: pointer;
+	list-style: none;
+}
+.ui-sortable-handle{
+	background: #666;
+	color: #fff;
+}
+/*.selectedItem{
+	border: 1px solid #000;
+	padding: 15px;
+	height: 15px;
+	width: 300px;
+	cursor: pointer;
+	list-style: none;
+	background: pink;
+}*/
+/*.sortablediv ul{
+	float: left;
+}
+.sortablediv li{
+	border: 1px solid #000;
+	padding: 15px;
+	height: 15px;
+	width: 250px;
+	cursor: pointer;
+	list-style: none;
+	margin-right: 50px;
+}*/
+/*.mydiv_animate{
+	border: 1px solid #000;
+	text-align: justify;
+	padding: 10px;
+	font-size: 15px;
+	width: 600px;
+	margin: 0 auto;
+}
+.liveDiv{
+	background: pink;
+	border: 2px solid #666;
+	font-size: 20px;
+	border-radius: 20px;  
+
+}*/
+#maindiv{
+	margin-left: 200px;
+	text-align: center;
+}
+#effect_box{
+	background: pink;
+	height: 300px;
+	width: 300px;
+	color: #fff;
+}

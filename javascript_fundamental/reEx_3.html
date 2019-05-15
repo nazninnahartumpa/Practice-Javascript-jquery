@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<table class="mytable">
+				<tr>
+					<td>Your Input</td>
+					<td><input type="text" id="givevalue"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="button" value="check" onclick="myRe()"></td>
+				</tr>
+				<tr>
+					<td>Your Result</td>
+					<td><textarea id="showvalue"></textarea></td>
+				</tr>
+			</table>
+			
+			<script type="text/javascript">
+				//Finding numeric value by regular expression..
+				// function myRe(){
+				// 	var str = document.getElementById("givevalue").value;
+				// 	//var result = str.match(/\d/);//give only first number
+				// 	//var result = str.match(/\d/g);//give all number
+				// 	var result = str.match(/\d+/g);//give pair of number 
+				// 	document.getElementById("showvalue").value = result;
+				// }	
+
+				function myRe(){
+					document.getElementById("showvalue").value = "";//avoid past's data reserve..
+					var str = document.getElementById("givevalue").value;
+					var result = str.match(/\d+/g);
+					if(result != null){
+						for(i=0; i<result.length; i++){
+							document.getElementById("showvalue").value += result[i]+"\n";
+						}
+					}
+				}	
+	
+		 	</script>
+
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</footer>
+	</div>
+</body>
+</html>

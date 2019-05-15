@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<div>
+				<button class="btn" onclick="fadeOut()">Start</button>
+				<img src="img.jpg" id="myImage" alt="Image">
+			</div>
+
+		 	<script type="text/javascript">
+		 		var element = document.getElementById("myImage");
+		 		var duration = 1000;
+		 		var hidtime = 1000;
+		 		var showtime = 1000;
+
+		 		function setOpacity(value){
+		 			element.style.opacity = value;
+		 		}
+
+		 		function fadeOut(){
+		 			for(i=0; i<=1; i+=0.01){
+		 				setTimeout("setOpacity("+1-i+")", i*duration);
+		 			}
+		 			setTimeout("fadeIn()",(duration+hidtime));
+		 		}
+
+		 		function fadeIn(){
+		 			for(i=0; i<=1; i+=0.01){
+		 				setTimeout("setOpacity("+i+")", i*duration);
+		 			}
+		 			setTimeout("fadeOut()",(duration+showtime));
+		 		}
+		 	</script>
+
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</footer>
+	</div>
+</body>
+</html>

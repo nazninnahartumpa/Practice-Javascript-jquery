@@ -1,0 +1,79 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	outline: 0px;
+}
+body{
+	font-family: Arial;
+}
+.template{
+	width: 960px;
+	margin: 0 auto;
+	background: #ddd;
+}
+.clear{
+	overflow: hidden;
+}
+.maincontent{
+	background: #fff;
+	min-height: 500px;
+	padding: 10px;
+	margin: 10px;
+}
+.header, .footer{
+	text-align: center;
+    font-size: 22px;
+    padding: 5px;
+    color: #282923;
+}
+#myImage{
+	width: 570px;
+    float: left;
+    margin-top: 34px;
+    margin-left: 165px;
+}
+.btn{
+	padding: 4px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    float: left;
+}
+table{
+	width: 270px;
+	margin: 0 auto;
+	border: 2px solid #ddd;
+	padding: 10px;
+}
+input[type="text"]{
+	width: 100px;
+	padding: 5px 8px;
+}
+input[type="button"]{
+	width: 120px;
+	padding: 5px 8px;
+	cursor: pointer;
+}
+
+.mytable{
+	width: 470px;
+	margin: 0 auto;
+	border: 2px solid #ddd;
+	padding: 10px;
+}
+.mytable input[type="text"]{
+	width: 170px;
+	padding: 8px 8px;
+}
+.mytable textarea{
+	height: 100px;
+	width: 190px;
+}
+.mytable input[type="submit"],[type="reset"]{
+	width: 100px;
+	padding: 5px 8px;
+	cursor: pointer;
+	float: left;
+}
+#error{
+	color: red;
+}

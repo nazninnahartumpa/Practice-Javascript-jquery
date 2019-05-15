@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<div>
+				<button type="button" onclick="timeInit()">Click Me!</button>
+				<button type="button" onclick="timeoutclear()">Clear!</button>
+			</div>
+			<div id="show"></div>
+		 	<script type="text/javascript">
+		 		var timeout;
+
+		 		function timeInit(){
+		 			timeout = setTimeout("timeouttrigger()", 2000);
+		 			document.getElementById("show").innerHTML = "The timeout has been started....";
+		 		}
+		 		function timeouttrigger(){
+		 			document.getElementById("show").innerHTML = "The timeout has been triggered after 3 second....";
+		 		}
+		 		function timeoutclear(){
+		 			clearTimeout(timeout);
+		 			document.getElementById("show").innerHTML = "The time is cleared.....";
+		 		}
+		 	</script>
+
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</footer>
+	</div>
+</body>
+</html>

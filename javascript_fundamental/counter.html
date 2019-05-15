@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<div>
+				<button type="button" onclick="timeInit()">Start Countdown</button>
+				<button type="button" onclick="timeoutclear()">Stop Countdown</button>
+			</div>
+			<div id="show"></div>
+		 	<script type="text/javascript">
+
+		 		var countdown;
+		 		var countdownNumber;
+
+		 		function timeInit(){
+		 			countdownNumber = 21;
+		 			timeouttrigger();
+		 		}
+
+		 		function timeouttrigger(){
+		 			if(countdownNumber > 0){
+		 				countdownNumber--;
+		 				document.getElementById("show").innerHTML = countdownNumber;
+		 				if(countdownNumber > 0){
+		 					countdown = setTimeout("timeouttrigger()", 1000);
+		 				}
+		 			}
+		 		}
+
+		 		function timeoutclear(){
+		 			clearTimeout(countdown);
+		 			//document.getElementById("show").innerHTML = "The time is cleared.....";
+		 		}
+		 	</script>
+
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</footer>
+	</div>
+</body>
+</html>

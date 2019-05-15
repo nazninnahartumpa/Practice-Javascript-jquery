@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<form action="" method="" name="myform">
+				<table class="mytable">
+					<tr>
+						<td><input type="text" name="t1" onchange="myfunc(this.form, this.name)"></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="chbox" onclick="myfunc(this.form, this.name)"></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="result" onchange="myfunc(this.form, this.name)"></td>
+					</tr>
+					<tr>
+						<td><input type="reset" value="Refresh"></td>
+					</tr>
+				</table>
+			</form>
+			
+			<script type="text/javascript">
+				function myfunc(form, pfield){
+					if(pfield == "result"){
+						if(form.chbox.checked){
+							form.t1.value = math.sqrt(form.result.value);
+						}else{
+							form.t1.value = form.result.value/2;
+						}
+					}else{
+						if(form.chbox.checked){
+							form.result.value = form.t1.value * form.t1.value;
+						}else{
+							form.result.value = form.t1.value*2;
+						}
+					}
+				}
+		 	</script>
+
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<table class="mytable">
+				<tr>
+					<td>Email: </td>
+					<td><input type="text" id="getvalue" onkeyup="myfunc()"></td>
+				</tr>
+			</table>
+			
+			<script type="text/javascript">
+				function myfunc(){
+					var getemail = document.getElementById("getvalue");
+					var email = getemail.value;
+					var emailRegex = /([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})/;
+
+					getemail.style.color = "white";
+
+					if(emailRegex.test(email)){
+						getemail.style.backgroundColor = "green";
+					}else{
+						getemail.style.backgroundColor = "red";
+					}
+				}
+	
+		 	</script>
+
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</footer>
+	</div>
+</body>
+</html>

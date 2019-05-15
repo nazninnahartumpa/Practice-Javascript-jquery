@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</header>
+
+		<section class="maincontent clear">
+			
+		 	<script type="text/javascript">
+		 		// Give the result only one time...
+		 		// setTimeout(function(){
+		 		// 	alert("Javascript setTimeout...");
+		 		// },1000)
+
+		 		// Give the result sevaraltime time...
+		 		// setInterval(function(){
+		 		//  	alert("Javascript setTimeout...");
+		 		// },5000)
+		 		
+		 		//Give result for a specific time....
+		 		var i = 0;
+		 		x = setInterval(function(){
+		 			i++;
+		 				alert("Javascript setInterval.....");
+		 				if(i == 5){
+		 					clearInterval(x);
+		 				}
+		 		}, 	5000)
+		 	</script>
+
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</footer>
+	</div>
+</body>
+</html>

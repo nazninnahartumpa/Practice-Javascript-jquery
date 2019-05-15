@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<!-- <div id="show" onclick="func(this)">Click Here</div>
+		 	<script type="text/javascript">
+		 		function func(event){
+		 			alert(event);
+		 			alert(this);
+		 		}
+		 	</script> -->
+
+		 	<script type="text/javascript">
+		 		function func(){
+		 			var a = 100;
+		 			this.b = 200;
+		 			this.c = 500;
+		 			this.d = function add(){
+		 				return this.b + this.c;
+		 			}
+		 		}
+		 		var obj = new func();
+		 		document.write(obj.d());
+		 	</script>
+
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>
+		 		<script type="text/javascript">
+		 			document.write("Javascript Fundamental Practice");
+		 		</script>
+		 	</h2>
+		</footer>
+	</div>
+</body>
+</html>

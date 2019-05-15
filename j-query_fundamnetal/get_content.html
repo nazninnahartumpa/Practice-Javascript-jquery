@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			//This code will show the text..
+		 	$("#showtext").click(function(){
+		 		alert("The text is : " + $("p").text())
+		 	});
+
+		 	//This code will show the text's html code also..
+		 	$("#showhtml").click(function(){
+		 		alert("This is html : " + $("p").html())
+		 	});
+
+		 	//This code will show the input's value..
+		 	$("#showvalue").click(function(){
+		 		alert("This is input's value : " + $("#input").val())
+		 	});
+
+		});
+
+	</script>
+</head>
+
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>Javascript Fundamental Practice</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<button id="showtext">Show Text</button>
+			<button id="showhtml">Show html</button>
+			<button id="showvalue">Show Value</button>
+
+			<div class="content">
+				<div>
+					Name : <input id="input" type="text" name="name" value="Naznin">
+				</div>
+				<p>"This is the text which is <strong>showed</strong>"</p>
+			</div>
+			
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>Javascript Fundamental Practice</h2>
+		</footer>
+	</div>
+</body>
+
+</html>

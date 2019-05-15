@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$("#submitbtn").click(function(e){
+				var isvalid = true;
+				$("input[type='text']#required").each(function(){
+					if (($(this).val())=="") {
+						isvalid = false;
+						$(this).css({
+							"border":"1px solid red",
+							"background":"#ffcece"
+						})
+
+						document.getElementById("err").innerHTML = "The field is required";
+						return false;
+					}else{
+						$(this).css({
+							"border":"",
+							"background":""
+						})
+						document.getElementById("err").innerHTML ="";
+					}
+				})
+
+				if(isvalid == false){
+					e.preventDefault();
+				}else{
+					clear();
+					document.getElementById("show").innerHTML = "Thank you....";
+					return false;
+				}
+			})
+		 });
+
+		function clear(){
+			$("#myform :input").each(function(){
+				$(this).val("");
+			});
+		}
+
+	</script>
+</head>
+
+<body>
+	<div class="template clear">
+		<header class="header clear">
+		 	<h2>Javascript Fundamental Practice</h2>
+		</header>
+
+		<section class="maincontent clear">
+			<form name="myform">
+				<table>
+					<tr>
+						<td>Name</td>
+						<td><input type="text" id="required"></td>
+
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td><input type="text" id="required"></td>
+					</tr>
+					<tr>
+						<td>Website</td>
+						<td><input type="text" ></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><button id="submitbtn">Submit</button></td>
+					</tr>
+				</table>
+				<div id="err"></div>
+				<div id="show"></div>
+			</form>
+			
+		</section>
+
+		<footer class="footer clear">
+		 	<h2>Javascript Fundamental Practice</h2>
+		</footer>
+	</div>
+</body>
+
+</html>
